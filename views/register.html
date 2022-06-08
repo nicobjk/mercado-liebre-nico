@@ -43,37 +43,44 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
+       
         <main class="register">
+            
             <form action="/" method="POST">
-                <div class="usuario"> 
+            <div class="nombre">
                 <input type="text" name="name" placeholder="Nombre y apellido">
-                <br> 
+                <br>
                 <input type="text" name="user" placeholder="Nombre de usuario">
                 <br>
                 <input type="email" name="email" placeholder="E-mail">
-                </div>
-                <br>
-                <h4>Fecha de nacimiento</h4>
-                <div class="fecha-nacimiento">
-                <input type="date" name="birth_date" id="birth_date">
-                </div>
-                <br>
-                <div class="domicilio">
-                <input type="text" name="addres" placeholder="Domicilio">
-                </div>
-                
+            </div>
             
-                <h4>Perfil del usuario</h4>
-                <div class="profile">
+            <div class="nacimiento">
+                <label class="fecha-nacimiento"  for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="birth_date" id="birth_date">
+            </div>
+            
+            <div>
+            <input class="domicilio" type="text" name="addres" placeholder="Domicilio">
+            <br>
+            <br>
+            </div>
+
+            <section class="perfil">
+                <label for="perfil">Perfil del usuario</label>
+                <div>
                     <input type="radio" name="profile" value="buy" id="buy">
                     <label for="buy">Comprador</label>
                     <input type="radio" name="profile" value="sell" id="sell">
                     <label for="sell">Vendedor</label>
                 </div>
-                
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
+                <br>
+                </section>
+
+            <section class="intereses">
+                <label for="intereses">Intereses</label>
+                <div class="interests">    
+                <div>
                         <input type="checkbox" name="interests" value="a" id="a">
                         <label for="a">Electro</label>
                     </div>
@@ -94,24 +101,23 @@
                         <label for="e">Vida sana</label>
                     </div>
                 </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
-                <div class="foto">
+            </section>
+
+            <div class="foto">
+                <label for="foto">Elegí tu foto de usuario</label>
                 <input class="subir-foto" type="file" name="avatar">
-                </div>
-                <br>
-            <section class="contrasena">
+            </div>
             
+            <section class="contrasena">
                 <div> <input type="password" name="pass" placeholder="Elegí tu contraseña">  </div>
                 <div><input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña"></div>
-            </section>  
-                <br>
+        </section>
+
             <div class="botones">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+                <button type="submit" value="Enviar">Enviar</button>
+                <button type="reset" value="Borrar">Borrar</button>
             </div>
-                <br>
-                
+                 
             </form>
         </main>
         <footer>

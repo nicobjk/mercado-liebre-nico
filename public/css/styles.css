@@ -316,90 +316,115 @@ main.register {
     
 }
 
-div.usuario {
-    display: flex ;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 15px;
-}
-
-div.usuario input {
-    width: 35vw;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-div.fecha-nacimiento {
+div.nombre {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    justify-content: center;
 }
 
-div.fecha-nacimiento input {
+div.nombre input {
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 35vw;
+    width: 30vw;
 }
 
-div.domicilio input{
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 35vw;
-}
-
-
-div.profile {
-    padding: 10px;
-    width: 35vw;
+div.nacimiento {
+    padding: 15px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-h4 {
-    margin-top: 15px;
-    text-align: left;
-    }
-
-div.profile input {
-    margin: 0 25px;
-}
-
-div.interests {
+div.nacimiento input {
     padding: 10px;
-    width: 35vw;
-    text-align: left;
-    justify-content: left;
-    }
-
-div.interests div {
-    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 30vw;
 }
- div.foto {
-     padding: 15px;
+ div input.domicilio {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 30vw;
+    margin-bottom: 10px;
  }
 
-section.contrasena div {
-    padding: 10px;
-}
-section.contrasena input {
-    width: 35vw;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
+ div.perfil {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+ }
 
-div.botones input {
+ div.perfil input , label {
+    padding: 0 20px;
+ }
+
+ section.intereses {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+
+ section.intereses div {
+    padding: 10px;
+    text-align: left;
+    align-items: flex-start;
+ }
+
+ div.foto {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+
+ div.foto input {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    width: 30vw;
+    margin-bottom: 10px;
+ }
+
+ section.contrasena div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+ }
+
+ section.contrasena input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 30vw;
+    margin-bottom: 10px;
+ }
+
+ div.botones button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 10vw;
     background-color: #0044AA;
     color: white;
-    width: 15vw;
-    text-align: center;
-}
+    margin: 0 10px;
+ }
+
+ div.botones button:hover {
+     background-color: #6ea0ec;
+ }
