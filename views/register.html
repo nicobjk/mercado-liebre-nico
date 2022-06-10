@@ -48,20 +48,20 @@
             
             <form action="/" method="POST">
             <div class="nombre">
-                <input type="text" name="name" placeholder="Nombre y apellido">
+                <input type="text" name="name" placeholder="Nombre y apellido" required>
                 <br>
-                <input type="text" name="user" placeholder="Nombre de usuario">
+                <input type="text" name="user" placeholder="Nombre de usuario" required>
                 <br>
-                <input type="email" name="email" placeholder="E-mail">
+                <input type="email" name="email" placeholder="E-mail" required>
             </div>
             
             <div class="nacimiento">
-                <label class="fecha-nacimiento"  for="fecha-nacimiento">Fecha de nacimiento</label>
-                <input type="date" name="birth_date" id="birth_date">
+                <label class="fecha-nacimiento"  for="fecha-nacimiento" >Fecha de nacimiento</label>
+                <input type="date" name="birth_date" id="birth_date" required>
             </div>
             
             <div>
-            <input class="domicilio" type="text" name="addres" placeholder="Domicilio">
+            <input class="domicilio" type="text" name="addres" placeholder="Domicilio" required>
             <br>
             <br>
             </div>
@@ -109,8 +109,8 @@
             </div>
             
             <section class="contrasena">
-                <div> <input type="password" name="pass" placeholder="Elegí tu contraseña"></div>
-                <div><input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña"></div>
+                <div> <input type="password" name="pass" placeholder="Elegí tu contraseña" required></div>
+                <div><input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" required></div>
         </section>
 
             <div class="botones">
